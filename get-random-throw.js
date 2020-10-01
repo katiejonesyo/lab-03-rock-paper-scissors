@@ -10,28 +10,28 @@ export function getRandomThrow() {
     } else if (randomNumber === 3) {
         computerChoice = 'scissors';
     }
-
     return computerChoice;
-};
+}
 
 
 export function userWins(userGuess, computerChoice) {
- }   if (userGuess === 'rock' && computerChoice === 'rock') {
-      return false;
- } else if (userGuess === 'rock' && computerChoice === 'paper') {
-     return false;
- } else if (userGuess === 'rock' && computerChoice === 'scissors') {
-     return true;
- } else if (userGuess === 'paper' && computerChoice === 'rock') {
-    return true;
- } else if (userGuess === 'paper' && computerChoice === 'scissors') {
-    return false;
- } else if (userGuess === 'paper' && computerChoice === 'paper') {
-    return false;
- }  else if (userGuess === 'scissors' && computerChoice === 'rock') {
-    return false;
- } else if (userGuess === 'scissors' && computerChoice === 'paper') {
-    return true;
- } else if (userGuess === 'scissors' && computerChoice === 'scissors') {
-    return false;
- };
+    if (userGuess === 'rock' && computerChoice === 'rock') {
+        return 'draw';
+    } else if (userGuess === 'rock' && computerChoice === 'paper') {
+        return 'lose';
+    } else if (userGuess === 'rock' && computerChoice === 'scissors') {
+        return 'win';
+    } else if (userGuess === 'paper' && computerChoice === 'rock') {
+        return 'win';
+    } else if (userGuess === 'paper' && computerChoice === 'scissors') {
+        return 'lose';
+    } else if (userGuess === 'paper' && computerChoice === 'paper') {
+        return 'draw';
+    } else if (userGuess === 'scissors' && computerChoice === 'rock') {
+        return 'lose';
+    } else if (userGuess === 'scissors' && computerChoice === 'paper') {
+        return 'win';
+    } else if (userGuess === 'scissors' && computerChoice === 'scissors') {
+        return 'draw';
+    }
+}
