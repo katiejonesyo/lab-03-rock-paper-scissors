@@ -1,17 +1,13 @@
-// import { example } from '../example.js';
-
+import { getRandomThrow, userWins } from '../get-random-throw.js';
 const test = QUnit.test;
 
-test('time to test a function', (expect) => {
-    //Arrange
-    // Set up your arguments and expectations
-    const expected = true;
-    
-    //Act 
-    // Call the function you're testing and set the result to a const
-    const actual = false;
 
-    //Expect
-    // Make assertions about what is expected versus the actual result
-    expect.equal(actual, expected);
+test('test should return true when paper beats rock.', (expect) => {
+    const actual = userWins('rock', 'paper');
+    const expected = true;
+
+    expect.equal(actual, expected)
 });
+
+
+

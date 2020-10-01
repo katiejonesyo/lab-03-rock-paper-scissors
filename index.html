@@ -2,30 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/home.css">
     <title>Rock Paper Scissors</title>
-    <header><center>Rock Paper Scissors</center></header>
+    <h2><header><center>Rock Paper Scissors</center></header></h2>
 </head>
 <body>
-    <center>
-    <input type="radio" name="choice"  value="Kitten" checked/>
-    <img src="http://www.placekitten.com/200/200">
-    <input type="radio" name="choice"  value="bear" checked/>
-    <img src="http://www.placebear.com/200/200">
-    <input type="radio" name="choice"   value="cage" checked/>
-    <img src="http://www.placecage.com/200/200">
-    <br>
     <p>
-        <button class="choices" id="rock">rock</button>
-        <button class="choices" id="paper">paper</button>
-        <button class="choices" id="scissors">scissors</button>
+        <center>
+        <input type="radio" name="choices"  value="rock" checked/>
+        <img src="http://www.placekitten.com/200/200">
+        <input type="radio" name="choices"  value="paper" checked/>
+        <img src="http://www.placebear.com/200/200">
+        <input type="radio" name="choices"   value="scissor" checked/>
+        <img src="http://www.placecage.com/200/200">
+        <br>
+        Rules:
+        <br>
+        Rock wins against scissors.
+        <br>
+        Scissors wins against paper.
+        <br>
+        Paper wins against rock.    
+
+
+        <p>
+            <button id="playButton">Let's Play</button>
+        </p>
+
+        <hr/>
+        Wins:<span id="winnerSpan"></span>
+        <br>
+        Draws:<span id="drawSpan"></span>
+        <br>
+        Losses:<span id="lossesSpan"></span>
+        <br>
+        Percentages: <span id="percentage"></span>
+        </center>
     </p>
-    <hr/>
-    <h2>Results:</h2>
-    <h2 id="results"></h2>
-    </center>
+        <center><button id="resetButton">Reset</button></center>
 
 
-    <script type="module" src="r-p-s.js"></script>
+    <script type="module" src="app.js"></script>
 </body>
 </html>
