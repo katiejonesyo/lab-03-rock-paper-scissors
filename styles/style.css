@@ -7,9 +7,8 @@ body {
 h2 {
     font-size: 3rem;
     font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
 }
-
-
 
 content {
     width: 80%;
