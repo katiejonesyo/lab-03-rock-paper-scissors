@@ -2,34 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/home.css">
     <title>Rock Paper Scissors</title>
     <h2><header><center>Rock Paper Scissors</center></header></h2>
 </head>
 <body>
     <p>
         <center>
-        <input type="radio" name="choice"  value="rock" checked/>
+        <input type="radio" name="choices"  value="rock" checked/>
         <img src="http://www.placekitten.com/200/200">
-        <input type="radio" name="choice"  value="paper" checked/>
+        <input type="radio" name="choices"  value="paper" checked/>
         <img src="http://www.placebear.com/200/200">
-        <input type="radio" name="choice"   value="scissor" checked/>
+        <input type="radio" name="choices"   value="scissor" checked/>
         <img src="http://www.placecage.com/200/200">
         <br>
+        Rules:
+        <br>
+        Rock wins against scissors.
+        <br>
+        Scissors wins against paper.
+        <br>
+        Paper wins against rock.    
+
+
         <p>
-            <button id="playButton">Play</button>
+            <button id="playButton">Let's Play</button>
         </p>
+
         <hr/>
         Wins:<span id="winnerSpan"></span>
         <br>
-        Draws<span id="drawSpan"></span>
+        Draws:<span id="drawSpan"></span>
         <br>
-        Losses<span id="lossesSpan"></span>
+        Losses:<span id="lossesSpan"></span>
         <br>
         Percentages: <span id="percentage"></span>
-
         </center>
     </p>
         <center><button id="resetButton">Reset</button></center>

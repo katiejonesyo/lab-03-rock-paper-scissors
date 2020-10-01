@@ -11,9 +11,8 @@ export function getRandomThrow() {
         computerChoice = 'scissors';
     }
 
-
     return computerChoice;
-}
+};
 
 
 export function userWins(userGuess, computerChoice) {
@@ -35,4 +34,4 @@ export function userWins(userGuess, computerChoice) {
     return true;
  } else if (userGuess === 'scissors' && computerChoice === 'scissors') {
     return false;
- }
+ };
