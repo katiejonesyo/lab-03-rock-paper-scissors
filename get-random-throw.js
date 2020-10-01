@@ -36,13 +36,3 @@ export function userWins(userGuess, computerChoice) {
  } else if (userGuess === 'scissors' && computerChoice === 'scissors') {
     return false;
  }
-
-
-
-
-
-
-
-
-
-
