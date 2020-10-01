@@ -2,28 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="home.css">
     <title>Rock Paper Scissors</title>
-    <header><center>Rock Paper Scissors</center></header>
+    <h2><header><center>Rock Paper Scissors</center></header></h2>
 </head>
 <body>
-    <center>
-    <input type="radio" name="choice"  value="Kitten" checked/>
-    <img src="http://www.placekitten.com/200/200">
-    <input type="radio" name="choice"  value="bear" checked/>
-    <img src="http://www.placebear.com/200/200">
-    <input type="radio" name="choice"   value="cage" checked/>
-    <img src="http://www.placecage.com/200/200">
-    <br>
     <p>
-        <button class="choices" id="rock">rock</button>
-        <button class="choices" id="paper">paper</button>
-        <button class="choices" id="scissors">scissors</button>
+        <center>
+        <input type="radio" name="choice"  value="rock" checked/>
+        <img src="http://www.placekitten.com/200/200">
+        <input type="radio" name="choice"  value="paper" checked/>
+        <img src="http://www.placebear.com/200/200">
+        <input type="radio" name="choice"   value="scissor" checked/>
+        <img src="http://www.placecage.com/200/200">
+        <br>
+        <p>
+            <button id="playButton">Play</button>
+        </p>
+        <hr/>
+        Wins:<span id="winnerSpan"></span>
+        <br>
+        Draws<span id="drawSpan"></span>
+        <br>
+        Losses<span id="lossesSpan"></span>
+        <br>
+        Percentages: <span id="percentage"></span>
+
+       
+        </center>
     </p>
-    <hr/>
-    <h2>Results:</h2>
-    <h2 id="results"></h2>
-    </center>
+        <center><button id="resetButton">Reset</button></center>
 
 
     <script type="module" src="r-p-s.js"></script>
